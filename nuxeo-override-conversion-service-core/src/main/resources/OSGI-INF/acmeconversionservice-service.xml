@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<component name="com.acme.core.convert.AcmeConversionService">
+  <require>org.nuxeo.ecm.core.convert.service.ConversionServiceImpl</require>
+  <!-- 
+  <require>org.nuxeo.ecm.core.convert.cache</require>
+  <require>com.siae.nuxeo.core.converter.cache</require>
+   -->
+
+  <implementation class="com.acme.core.convert.AcmeConversionServiceImpl" />
+
+  <service>
+    <provide interface="org.nuxeo.ecm.core.convert.api.ConversionService" />
+  </service>
+</component>
