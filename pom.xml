@@ -4,12 +4,12 @@
   <parent>
     <groupId>org.nuxeo</groupId>
     <artifactId>nuxeo-parent</artifactId>
-    <version>2021.70</version>
+    <version>2023.36</version>
   </parent>
 
   <groupId>com.acme</groupId>
   <artifactId>nuxeo-override-conversion-service-parent</artifactId>
-  <version>1.0.0</version>
+  <version>1.1.0</version>
   <name>Nuxeo override conversion service parent</name>
   <description />
   <packaging>pom</packaging>
@@ -17,7 +17,7 @@
   <properties>
     <!-- Skip Nuxeo enforcer rules by default -->
     <nuxeo.skip.enforcer>true</nuxeo.skip.enforcer>
-    <nuxeo.target.version>2021.70</nuxeo.target.version>
+    <nuxeo.target.version>2023.36</nuxeo.target.version>
     <skipDocker>false</skipDocker>
   </properties>
 
