@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<component name="com.acme.core.convert.AcmeConversionService.cache">
+
+  <require>com.acme.core.convert.AcmeConversionService</require>
+
+  <extension target="com.acme.core.convert.AcmeConversionService" point="configuration">
+    <cache enable="${nuxeo.conversion.cache.enabled:=true}">
+      <gcRate>${nuxeo.conversion.cache.gcRate:=10m}</gcRate>
+      <maxSizeKB>${nuxeo.conversion.cache.maxSizeKB:=10240}</maxSizeKB>
+    </cache>
+  </extension>
+
+</component>

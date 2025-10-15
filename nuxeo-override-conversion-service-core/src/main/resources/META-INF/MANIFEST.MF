@@ -6,4 +6,4 @@ Bundle-Version: 1.0.0
 Bundle-Name: nuxeo-override-conversion-service-core
 Bundle-ManifestVersion: 2
 Bundle-SymbolicName: com.acme.core.convert.nuxeo-override-conversion-service-core;singleton=true
-Nuxeo-Component: OSGI-INF/acmeconversionservice-service.xml
+Nuxeo-Component: OSGI-INF/acmeconversionservice-service.xml,OSGI-INF/convert-cache-fix-contrib.xml,OSGI-INF/acme-convert-cache-contrib.xml

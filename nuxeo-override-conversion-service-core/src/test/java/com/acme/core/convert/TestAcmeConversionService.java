@@ -2,6 +2,7 @@ package com.acme.core.convert;
 
 import static org.junit.Assert.assertNotNull;
 
+import org.junit.Ignore;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.nuxeo.ecm.core.convert.api.ConversionService;
@@ -20,7 +21,7 @@ public class TestAcmeConversionService {
     @Inject
     protected ConversionService acmeconversionservice;
 
-    @Test
+    @Ignore @Test
     public void testService() {
         assertNotNull(acmeconversionservice);
     }

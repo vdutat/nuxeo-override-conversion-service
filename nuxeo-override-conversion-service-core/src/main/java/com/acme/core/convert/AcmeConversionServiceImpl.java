@@ -7,10 +7,11 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.nuxeo.ecm.core.api.blobholder.BlobHolder;
 import org.nuxeo.ecm.core.convert.api.ConversionException;
+import org.nuxeo.ecm.core.convert.api.ConversionService;
 import org.nuxeo.ecm.core.convert.service.ConversionServiceImpl;
 import org.nuxeo.runtime.model.ComponentContext;
 
-public class AcmeConversionServiceImpl extends ConversionServiceImpl implements AcmeConversionService {
+public class AcmeConversionServiceImpl extends ConversionServiceImpl implements ConversionService {
 
     private static final Logger log = LogManager.getLogger(AcmeConversionServiceImpl.class);
 
@@ -24,6 +25,7 @@ public class AcmeConversionServiceImpl extends ConversionServiceImpl implements 
     @Override
     public void activate(ComponentContext context) {
         log.warn("<activate> ");
+        super.activate(context);
     }
 
     @Override
